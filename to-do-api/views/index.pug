@@ -1,0 +1,12 @@
+html
+    head
+        link(rel="stylesheet" type="text/css" href = "/css/style.css")
+    body
+        h1=title
+        if isAuthenticated
+            h3 logged in
+            button(type="button" onclick= "window.location='/logout'")  Logout
+            button(type="button" onclick= "window.location='/profile'")  Profile
+        else
+            h3 log in below
+            button(type="button" onclick= "window.location='/login'")  Login
